@@ -38,8 +38,8 @@ class Api {
             method: 'PATCH',
             headers: this._headers,
             body: JSON.stringify({
-                name: data.userName,
-                about: data.job,
+                name: data.name,
+                about: data.about
             }),
         }).then((err) => {
             return this._checkResponse(err);

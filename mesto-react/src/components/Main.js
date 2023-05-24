@@ -19,6 +19,7 @@ function Main(props) {
                 </div>
                 <button className="profile__button-add" type="button" onClick={() => { props.onAddPlace(true) }}></button>
             </section>
+
             <section className="elements">
                 {props.cards.map(card => (
                     <Card
