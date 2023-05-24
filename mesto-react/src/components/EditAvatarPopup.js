@@ -16,10 +16,6 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, onLoading }) {
     });
   }
 
-  function handleChangeAvatar() {
-    return inputRef.current.value;
-  }
-
   return (
     <PopupWithForm
       name="avatar"
@@ -35,7 +31,6 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, onLoading }) {
         id="avatar-link-input"
         placeholder="Ссылка на картинку"
         ref={inputRef}
-        onChange={handleChangeAvatar}
         required
       />
       <span className="avatar-link-input-error popup__input-error" />
